@@ -1,4 +1,4 @@
-# My NeoVim Config (A NeoVim Config for Colemak Users)
+# My NeoVim Config
 
 #### [中文版README](./README_cn.md) by [@EvanMeek](https://github.com/EvanMeek)
 
@@ -99,19 +99,14 @@ Python:
 #### 1.2 Remapped Cursor Movement
 | Shortcut   | Action                                                    | Equivalent |
 |------------|-----------------------------------------------------------|------------|
-| `u`        | Cursor up a terminal line                                 | `k`        |
-| `e`        | Cursor down a terminal line                               | `j`        |
-| `n`        | Cursor left                                               | `h`        |
-| `i`        | Cursor right                                              | `l`        |
-| `U`        | Cursor up 5 terminal lines                                | `5k`       |
-| `E`        | Cursor down 5 terminal lines                              | `5j`       |
-| `N`        | Cursor to the start of the line                           | `0`        |
-| `I`        | Cursor to the end of the line                             | `$`        |
-| `Ctrl` `u` | Move the view port up 5 lines without moving the cursor   | `Ctrl` `y` |
-| `Ctrl` `e` | Move the view port down 5 lines without moving the cursor | `Ctrl` `e` |
-| `h`        | Move to the end of this word                              | `e`        |
+| `K`        | Cursor up 5 terminal lines                                | `5k`       |
+| `J`        | Cursor down 5 terminal lines                              | `5j`       |
+| `H`        | Cursor to the start of the line                           | `0`        |
+| `L`        | Cursor to the end of the line                             | `$`        |
+| `Ctrl` `i` | Move the view port up 5 lines without moving the cursor   | `Ctrl` `y` |
+| `Ctrl` `o` | Move the view port down 5 lines without moving the cursor | `Ctrl` `e` |
 | `W`        | Move cursor five words forward                            | `5w`       |
-| `B`        | Move cursor five words forward                            | `5b`       |
+| `B`        | Move cursor five words backward                           | `5b`       |
 
 #### 1.3 Remapped Insert Mode Keys
 | Shortcut   | Action                                                               |
@@ -122,7 +117,6 @@ Python:
 #### 1.4 Remapped Text Manipulating Commands in Normal Mode
 | Shortcut        | Action                                |
 |-----------------|---------------------------------------|
-| `l`             | **undo**                              |
 | `<`             | Un-indent                             |
 | `>`             | Indent                                |
 | `Ctrl` `a`      | Increase the number under cursor by 1 |
@@ -132,10 +126,11 @@ Python:
 #### 1.5 Other Useful Normal Mode Remapping
 | Shortcut        | Action                                 |
 |-----------------|----------------------------------------|
-| `r`             | **Compile/Run the current file**       |
-| `Y`             | Copy selected text to system clipboard |
+| `r`             | **Compile/Run the current file**           |
+| `SPACE` 'y'     | Copy selected text to system clipboard |
+| `SPACE` 'p/P'   | Copy selected text to system clipboard |
 | `z` `=`         | Show spell suggestions                 |
-| `SPACE` `s` `c` | Toggle spell suggestion a              |
+| `SPACE` `s` `t` | Open Startify                          |
 | `SPACE` `d` `w` | Find adjacent duplicated word          |
 | `SPACE` `t` `t` | Convert every 4 Spaces to a tab        |
 | `SPACE` `o`     | Fold                                   |
@@ -147,10 +142,10 @@ Python:
 #### 2.1 Creating Window Through Split Screen
 | Shortcut    | Action                                                                      |
 |-------------|-----------------------------------------------------------------------------|
-| `s` `u`     | Create a new horizontal split screen and place it above the current window  |
-| `s` `e`     | Create a new horizontal split screen and place it below the current window  |
-| `s` `n`     | Create a new vertical split screen and place it left to the current window  |
-| `s` `i`     | Create a new vertical split screen and place it right to the current window |
+| `s` `k`     | Create a new horizontal split screen and place it above the current window  |
+| `s` `j`     | Create a new horizontal split screen and place it below the current window  |
+| `s` `h`     | Create a new vertical split screen and place it left to the current window  |
+| `s` `l`     | Create a new vertical split screen and place it right to the current window |
 | `s` `v`     | Set the two splits to be vertical                                           |
 | `s` `h`     | Set the two splits to be horizontal                                         |
 | `s` `r` `v` | Rotate splits and arrange splits vertically                                 |
@@ -160,10 +155,10 @@ Python:
 | Shortcut      | Action                         |
 |---------------|--------------------------------|
 | `SPACE` + `w` | Move cursor to the next window |
-| `SPACE` + `n` | Move cursor one window left    |
-| `SPACE` + `i` | Move cursor one window right   |
-| `SPACE` + `u` | Move cursor one window up      |
-| `SPACE` + `e` | Move cursor one window down    |
+| `SPACE` + `h` | Move cursor one window left    |
+| `SPACE` + `l` | Move cursor one window right   |
+| `SPACE` + `k` | Move cursor one window up      |
+| `SPACE` + `j` | Move cursor one window down    |
 
 #### 2.3 Resizing Different Windows
 Use the arrow keys to resize the current window.
@@ -242,14 +237,14 @@ See `:help table-mode.txt` for more.
 #### FZF - the fuzzy file finder
 | Shortcut   | Action           |
 |------------|------------------|
-| `Ctrl` `p` | **Active FZF**   |
+| `Ctrl` `p` | **Active FZF**       |
 | `Ctrl` `u` | Move up 1 item   |
 | `Ctrl` `e` | Move down 1 item |
 
 #### Undotree
 | Shortcut      | Action        |
 |---------------|---------------|
-| `Shift` + `L` | Open Undotree |
+| `SPACE` + `u` | Open Undotree |
 | `Shift` + `K` | History go up |
 | `Shift` + `J` | History go down |
 

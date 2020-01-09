@@ -113,12 +113,12 @@ noremap J 5j
 noremap K 5k
 noremap H 0
 noremap L $
-noremap <C-u> 5<C-e>
-noremap <C-i> 5<C-y>
+noremap <C-i> 5<C-e>
+noremap <C-o> 5<C-y>
 "inoremap <C-j> <Esc>5<C-e>a
 "inoremap <C-k> <Esc>5<C-y>a
 " Copy to system clipboard
-vnoremap Y :w !xclip -i -sel c<CR>
+"vnoremap Y :w !xclip -i -sel c<CR>
 nnoremap <LEADER>p "+p
 nnoremap <LEADER>P "+P
 vnoremap <LEADER>y "+y
@@ -173,9 +173,9 @@ map <left> :vertical resize-5<CR>
 map <right> :vertical resize+5<CR>
 
 " Place the two screens up and down
-noremap sh <C-w>t<C-w>K
+noremap sch <C-w>t<C-w>K
 " Place the two screens side by side
-noremap sv <C-w>t<C-w>H
+noremap scv <C-w>t<C-w>H
 
 " Rotate screens
 noremap srh <C-w>b<C-w>K
@@ -216,7 +216,7 @@ map <LEADER>/ :set splitbelow<CR>:sp<CR>:term<CR>
 map <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4i
 
 " Spelling Check with <space>sc
-map <LEADER>sc :set spell!<CR>
+"map <LEADER>sc :set spell!<CR>
 noremap <C-s> ea<C-x>s
 inoremap <C-s> <Esc>ea<C-x>s
 
@@ -629,7 +629,7 @@ let g:SignatureMap = {
 " ===
 " === Undotree
 " ===
-map <LEADER> L :UndotreeToggle<CR>
+map <LEADER>u :UndotreeToggle<CR>
 let g:undotree_DiffAutoOpen = 1
 let g:undotree_SetFocusWhenToggle = 1
 let g:undotree_ShortIndicators = 1

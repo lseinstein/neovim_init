@@ -113,8 +113,8 @@ noremap J 5j
 noremap K 5k
 noremap H 0
 noremap L $
-noremap <C-i> 5<C-e>
-noremap <C-o> 5<C-y>
+noremap <C-e> 5<C-e>
+noremap <C-y> 5<C-y>
 "inoremap <C-j> <Esc>5<C-e>a
 "inoremap <C-k> <Esc>5<C-y>a
 " Copy to system clipboard
@@ -138,8 +138,8 @@ nnoremap > >>
 
 " Search
 map <LEADER><CR> :nohlsearch<CR>
-noremap , nzz
-noremap . Nzz
+noremap . nzz
+noremap , Nzz
 
 " Adjacent duplicate words
 map <LEADER>dw /\(\<\w\+\>\)\_s*\1

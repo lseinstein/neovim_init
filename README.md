@@ -58,7 +58,7 @@ Please **DO NOT** just copy this config without really looking at it! Please, at
 
 - [ ] Install `pynvim` (pip)
 - [ ] Install `nodejs`, and do `npm install -g neovim`
-- [ ] Install nerd-fonts (actually it's optional but it looks real good)
+- [ ] Install nerd-fonts (actually it's optional but it looks real good), or install devicons by copying devicons.ttf in https://vorillaz.github.io/devicons/#/main to ~/.fonts and doing   fc-cache -f -v
 
 ## After Installation, You Might Want To:
 #### First of all

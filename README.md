@@ -103,8 +103,8 @@ Python:
 | `J`        | Cursor down 5 terminal lines                              | `5j`       |
 | `H`        | Cursor to the start of the line                           | `0`        |
 | `L`        | Cursor to the end of the line                             | `$`        |
-| `Ctrl` `i` | Move the view port up 5 lines without moving the cursor   | `Ctrl` `y` |
-| `Ctrl` `o` | Move the view port down 5 lines without moving the cursor | `Ctrl` `e` |
+| `Ctrl` `y` | Move the view port up 5 lines without moving the cursor   | `Ctrl` `y` |
+| `Ctrl` `e` | Move the view port down 5 lines without moving the cursor | `Ctrl` `e` |
 | `W`        | Move cursor five words forward                            | `5w`       |
 | `B`        | Move cursor five words backward                           | `5b`       |
 
@@ -146,8 +146,8 @@ Python:
 | `s` `j`     | Create a new horizontal split screen and place it below the current window  |
 | `s` `h`     | Create a new vertical split screen and place it left to the current window  |
 | `s` `l`     | Create a new vertical split screen and place it right to the current window |
-| `s` `v`     | Set the two splits to be vertical                                           |
-| `s` `h`     | Set the two splits to be horizontal                                         |
+| `s` `c` `v` | Set the two splits to be vertical                                           |
+| `s` `c` `h` | Set the two splits to be horizontal                                         |
 | `s` `r` `v` | Rotate splits and arrange splits vertically                                 |
 | `s` `r` `h` | Rotate splits and arrange splits horizontally                               |
 
@@ -237,16 +237,16 @@ See `:help table-mode.txt` for more.
 #### FZF - the fuzzy file finder
 | Shortcut   | Action           |
 |------------|------------------|
-| `Ctrl` `p` | **Active FZF**       |
+| `Ctrl` `p` | **Active FZF**   |
 | `Ctrl` `u` | Move up 1 item   |
 | `Ctrl` `e` | Move down 1 item |
 
 #### Undotree
-| Shortcut      | Action        |
-|---------------|---------------|
-| `SPACE` + `u` | Open Undotree |
-| `Shift` + `K` | History go up |
-| `Shift` + `J` | History go down |
+| Shortcut       | Action         |
+|----------------|----------------|
+| `SPACE` `u` `t`| Open Undotree  |
+| `Shift` `K`    | History go up  |
+| `Shift` `J`    | History go down|
 
 #### Ranger.vim - file browser
 - [ ] Make sure you have ranger installed

@@ -206,8 +206,8 @@ Use the arrow keys to resize the current window.
 | Shortcut          | Action              |
 |-------------------|---------------------|
 | `tt`              | **Toggle NerdTree** |
-| `I`               | Open in new split   |
-| `O`               | Open in new tab     |
+| `i`               | Open in new split   |
+| `o`               | Open in new tab     |
 | `l`               | Change root         |
 | `z` `h`           | Toggle hidden       |
 | `,` (in NERDTREE) | Toggle menu         |

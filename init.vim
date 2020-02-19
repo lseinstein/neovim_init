@@ -429,10 +429,10 @@ let g:airline_mode_map = {
 " ===
 map tt :NERDTreeToggle<CR>
 let NERDTreeMapOpenExpl = ""
-let NERDTreeMapUpdir = "N"
-let NERDTreeMapUpdirKeepOpen = "n"
+let NERDTreeMapUpdir = "H"
+let NERDTreeMapUpdirKeepOpen = "h"
 let NERDTreeMapOpenSplit = ""
-let NERDTreeMapOpenVSplit = "I"
+let NERDTreeMapOpenVSplit = "<leader><CR>"
 let NERDTreeMapActivateNode = "i"
 let NERDTreeMapOpenInTab = "o"
 let NERDTreeMapOpenInTabSilent = "O"
@@ -446,6 +446,17 @@ let NERDTreeMapToggleHidden = "zh"
 " ==
 " == NERDTree-git
 " ==
+"let g:NERDTreeIndicatorMapCustom = {
+    "\ "Modified"  : "*",
+    "\ "Staged"    : "+",
+    "\ "Untracked" : "^",
+    "\ "Renamed"   : "-",
+    "\ "Unmerged"  : "=",
+    "\ "Deleted"   : "x",
+    "\ "Dirty"     : "n",
+    "\ "Clean"     : "y",
+    "\ "Unknown"   : "?"
+    "\ }
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
@@ -629,7 +640,7 @@ let g:SignatureMap = {
 " ===
 " === Undotree
 " ===
-map <LEADER>u :UndotreeToggle<CR>
+map <LEADER>ut :UndotreeToggle<CR>
 let g:undotree_DiffAutoOpen = 1
 let g:undotree_SetFocusWhenToggle = 1
 let g:undotree_ShortIndicators = 1
